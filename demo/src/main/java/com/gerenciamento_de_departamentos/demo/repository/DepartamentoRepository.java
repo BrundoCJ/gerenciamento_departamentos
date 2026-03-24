@@ -1,4 +1,9 @@
 package com.gerenciamento_de_departamentos.demo.repository;
 
-public class DepartamentoRepository {
+import com.gerenciamento_de_departamentos.demo.entity.Departamento;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface DepartamentoRepository extends JpaRepository<Departamento, Long> {
 }
